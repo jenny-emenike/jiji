@@ -1,0 +1,62 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+#form{
+    width: 380px;
+    margin-right: 20pt;
+    margin-left:20pt;
+    background-color: rgb(71, 71, 71);
+    transform: translate(140%, 2%);
+    padding: 5pt 19pt;
+    margin-bottom: 20pt;
+
+   
+
+
+}
+#boxes{
+    border-bottom: 10pt solid white ;
+    border-radius: 10pt;
+    
+}
+button{
+    font-family: cursive;
+    font-size: 20pt;
+    background-color: black;
+    color: grey;
+    border : 1pt solid black;
+    border-radius: 10pt;
+    margin: 0pt 80pt;
+}
+
+h2{
+    font-size:30pt;
+}
+h1{
+    font-size:65pt;
+}
+label{
+    border-bottom: 2pt solid white;
+    border-radius: 10pt;
+
+
+
+
+
+}
+footer{
+    color: white;
+}
+footer h2{
+    color:black;
+}
+#i1{
+    
+padding-right: 1000pt;
+    height: 500px;
+    width:500px;
+}
+#p1{
+    float:left;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+
+  <head>
+    <link rel="stylesheet" href="angular.min.js">
+    <link rel="stylesheet" href="angular.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  </head>
+  <body>
+<div ng-app="cost" ng-controller="costApp">
+  <label>Price<input type="number" placeholder="Price" ng-model="price"></label><br>
+  <label> Quantity<input type="number" placeholder="qty" ng-model="qty"></label><br>
+  <label>Discount<input type="discount" placeholder="discount" ng-model="discount"></label><br>
+  <button type="button" ng-click="clock()" class="btn btn-lg btn-success">Amount Payable</button>
+<b>Total: <span>{{total | currency: 'AED'}}</span></b>
+</div>
+<script>
+  var app = angular.module('cost', []);
+  app.controller('costApp', function($scope){
+    $scope.price = 0;
+    $scope.qty = 0;
+    $scope.discount= 0;
+    $scope.total= 0;
+    $scope.clock = function($scope){
+      this.total = this.discount -(this.price * this. qty);
+    };
+  });
+</script>
+  </body>
+</html>
